@@ -1,38 +1,109 @@
-.App {
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Center everything */
+body {
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container */
+.Todo-list {
+  background: #2f2f4a;
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Title */
+.Todo-list h1 {
+  color: #fff;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Input */
+input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Add button */
+.addbutton {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #00c896;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addbutton:hover {
+  background: #00a67d;
+}
+
+/* List */
+ol {
+  margin-top: 20px;
+}
+
+/* Each task */
+li {
+  background: #3c3c5c;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Text */
+.text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Buttons */
+button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Delete */
+.DEL {
+  background: #ff4d4d;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.DEL:hover {
+  background: #cc0000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Up */
+.Up {
+  background: #4da6ff;
+  color: white;
+}
+
+.Up:hover {
+  background: #0066cc;
 }
