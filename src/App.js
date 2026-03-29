@@ -1,8 +1,9 @@
-import ToDoList from "./Moviecompenent/Todolist";
+import Stopwatch from "./Moviecompenent/Stopwatch";
+
 function App(){
 
 
-  return(<ToDoList></ToDoList>)
+  return(<Stopwatch></Stopwatch>)
 }
 
 
